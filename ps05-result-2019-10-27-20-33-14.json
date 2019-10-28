@@ -1,0 +1,40 @@
+{
+    "unauthorized_lib_calls": [],
+    "tests": [
+        {
+            "output": {
+                "passfail": "failed"
+            },
+            "traceback": "Traceback (most recent call last):\n  File \"/home/grader/ps05/CVResult.py\", line 29, in func_wrapper\n    ans = func(self)\n  File \"run3.py\", line 271, in test_appearance_particle_filter\n    pf.process(frame)\n  File \"/home/grader/ps05/workspace/ps5.py\", line 296, in process\n    raise NotImplementedError\nNotImplementedError\n",
+            "description": "Test Appearance Particle Filter (20 points)"
+        },
+        {
+            "output": {
+                "passfail": "failed"
+            },
+            "traceback": "Traceback (most recent call last):\n  File \"/home/grader/ps05/CVResult.py\", line 29, in func_wrapper\n    ans = func(self)\n  File \"run3.py\", line 245, in test_particle_filter\n    num_particles=num_particles, sigma_mse=sigma_mse, sigma_dyn=sigma_dyn)\n  File \"run3.py\", line 131, in check_center\n    actual_center, max_distance, kwargs))\nAssertionError: False is not true : Test failed at frame: 11 / 400. \nEstimated center is too far from the actual center. \nStudent's center: [163.66725980587285, 93.25026143305824] \nActual center: [169, 32] \nMax euclidean distance allowed: 37.5 \nParameters used: {'sigma_dyn': 10.0, 'num_particles': 100, 'sigma_mse': 10.0}\n",
+            "description": "Test base particle_filter (20 points)"
+        },
+        {
+            "output": {
+                "passfail": "passed"
+            },
+            "traceback": "",
+            "description": "Test base Kalman filter (20 points)"
+        },
+        {
+            "output": {
+                "passfail": "passed"
+            },
+            "traceback": "",
+            "description": "Test base Kalman filter with measurement NOISE_1 (20 points)"
+        },
+        {
+            "output": {
+                "passfail": "passed"
+            },
+            "traceback": "",
+            "description": "Test base Kalman filter with measurement NOISE_2 (20 points)"
+        }
+    ]
+}
